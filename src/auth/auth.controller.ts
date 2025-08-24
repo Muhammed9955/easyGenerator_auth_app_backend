@@ -29,7 +29,6 @@ export class AuthController {
   @Get('/profile')
   @UseGuards(AuthGuard())
   async getProfile(@Req() req): Promise<Partial<User>> {
-    // console.log({ user: req?.user });
     return this.authService.getUserProfile(req?.user?._id);
   }
 }
