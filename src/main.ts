@@ -14,5 +14,3 @@ async function bootstrap() {
   await app.listen(3001);
 }
 bootstrap();
-
-git remote add origin https://github.com/Muhammed9955/easyGenerator_auth_app_backend.git
